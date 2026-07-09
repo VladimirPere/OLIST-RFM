@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import silhouette_score
 
-rfm = pd.read_csv('/home/vladimir/Coding/Projects/OLIST-RFM/rfm.csv')
+rfm = pd.read_csv('/home/vladimir/Coding/Projects/OLIST-RFM/*.csv/rfm.csv')
 rfm_features = rfm[['Recency', 'Frequency', 'Monetary_log']]
 wcss = []
 sil_scores = []

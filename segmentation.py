@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.decomposition import PCA
 
-rfm = pd.read_csv('/home/vladimir/Coding/Projects/OLIST-RFM/rfm.csv')
+rfm = pd.read_csv('/home/vladimir/Coding/Projects/OLIST-RFM/*.csv/rfm.csv')
 rfm_features = rfm[['Recency', 'Frequency', 'Monetary_log']]
 
 pipeline = Pipeline(steps=[
@@ -55,4 +55,4 @@ cluster_summary['Count'] = rfm.groupby('Cluster')['Cluster'].count()
 cluster_summary['Segment'] = cluster_summary.index.map(cluster_names)
 print(cluster_summary)
 
-rfm.to_csv('/home/vladimir/Coding/Projects/OLIST-RFM/rfm_clustered.csv', index=False)
+rfm.to_csv('/home/vladimir/Coding/Projects/OLIST-RFM/*.csv/rfm_clustered.csv', index=False)

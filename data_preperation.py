@@ -83,4 +83,4 @@ if __name__ == "__main__":
 
 
 
-rfm.to_csv('/home/vladimir/Coding/Projects/OLIST-RFM/rfm.csv', index=False)
+rfm.to_csv('/home/vladimir/Coding/Projects/OLIST-RFM/*.csv/rfm.csv', index=False)
