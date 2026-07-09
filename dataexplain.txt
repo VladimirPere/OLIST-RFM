@@ -1,0 +1,51 @@
+    Sil_score & WCSS
+Sil scores showed a max of about .37 at a k clusters of 4, the elbow method also showed a bend at 4
+A Silhouette score of .37 is low, but reflects a real world customer data set well. Behavior is not cleanly seperable into distinct clusters.
+
+    Total variance: 72.1%
+This variance shows that the 2d graph shows a good deal of the high dimensional data and is fairly faithful to actual data
+
+    PCA variance ratio
+The variance ratio was [0.38896367 0.33232967]. This shows that both axies contibute evenly to the final graph
+
+     Recency  Frequency  Monetary_log
+PC1   -0.137      0.702         0.699
+PC2    0.990      0.073         0.121
+
+The PCA components show that PC1 (x-axis) is almost all frequency and Monetary. Whereas PC2 (y-axis) is almost entirely recency.
+
+
+         Recency  Frequency  Monetary  Count               Segment
+Cluster                                                           
+0         292.81        1.0    262.09  29390  Recent High Spenders
+1         272.53        1.0     65.63  33859   Recent Low Spenders
+2         550.08        1.0    119.11  26440        Lost Customers
+3         343.58        2.1    274.82   2733   Loyal High Spenders
+
+- Cluster 0 shows very recent people who spend quite a bit, not frequent. 'Recent High Spenders'
+- Cluster 1 shows recent buyers that spend little. Most likely people that are new: 'Recent Low Spenders'
+- Cluster 2 shows the least recent buyers. Not much spent. Due to low engagement:  'Lost customers'
+- Cluster 3 shows less recent but more frequent buyers. These also spend a lot of many. Not too many people. 'Loyal High Spenders'
+
+- Cluster 3 has the least people but the most important for the business, high spenders who buy frequently. Shows that loyal customers
+are rare on OLIST. 
+
+- 3 of the 4 clusters have a frequency of 1. This is accurate to OLIST main demographic of single purchase heavy spenders.
+- Monetary and recency contribute most to OLIST demographics. With frequency contributing less except in Cluster 3, where loyalty is important.
+
+
+PCA scatter plot observations:
+- Lost Customers sit distinctly above other clusters on PC2 (Recency axis). Consistent with the 550 day avg recency.
+- Loyal High Spenders are clearly separated rightward on PC1 (Frequency + Monetary axis). Only cluster with Frequency > 1.
+- Loyal High Spenders show layering with vertical bands, consistent with discrete Frequency values (2, 3, 4+ orders)
+- Loyal High Spenders could be further clustered due to the verticle bands of emptiness
+
+
+    Applications of Findings
+Cluster 0 (Recent High Spenders) -> retention campaign on premium products. Have budget to spend on quality goods.
+Cluster 1 (Recent Low Spenders) -> More frequent emails. Deals may be important as these people could have a budget. Lost of people s even a small 
+    conversion rate would help.
+Cluster 2 (Lost Customers) -> either cut off or win back with new deals or recommended goods. customers over the average, 550 days, should be cut off. 
+    attempting a win back campaign below that would be risky but could have great results due to how many there are.
+Cluster 3 (Loyal High Spenders) -> Very important. Keep using loyalty points, early access to products, presonalized recomendations. Even though this
+    The smallest group, protecting them should be high priority
