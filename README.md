@@ -1,4 +1,4 @@
-RFM Customer Segmentation of 93,000 Olist customers using KMeans clustering, identifying 4 distinct behavioral segments.
+# RFM Customer Segmentation of 93,000 Olist customers using KMeans clustering, identifying 4 distinct behavioral segments.
 
 Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?select=olist_orders_dataset.csv
 
