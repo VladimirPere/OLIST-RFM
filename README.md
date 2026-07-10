@@ -8,7 +8,8 @@ Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/dataset
 - Create an unsupervised model correlating the Recency, Frequency, and Monetary value of customer transactions on OLIST, a Brazilian E-Commerce website.
 - Using the Model, segment customers into distinct behavioral groups for improved targeted marketing strategies
 
-  Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib
+## Libraries: 
+pandas, numpy, scikit-learn, seaborn, matplotlib
 
 ## Procedure
 - Convert data to a complete RFM table with each customer unique ID
@@ -45,8 +46,8 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
   <img src="images/kmeans_clusters_pca_projection.png" width="500" alt="PCA projection of KMeans clustering">
 </p>
 
-- Cluster 0 shows a group of recent spenders that have a high monetary budget. labeling these people as "Recent High Spenders"
-- Cluster 1 shows a group that spends much less than their cluster 0 counterparts. labeling these as "Budget Cautious Spenders"
+- Cluster 0 shows a group of recent spenders that have a high monetary budget. Labeling these people as "Recent High Spenders"
+- Cluster 1 shows a group that spends much less than their cluster 0 counterparts. Labeling these as "Budget Cautious Spenders"
 - Cluster 2 shows Customers who have not used OLIST in a long time. Labeling these "Lost Customers"
 - Cluster 3 shows by far the fewest people but also the most frequent users. With an average recency between cluster 0 and cluster 2, these people are labeled "Loyal Spenders"
 - Cluster 3 also shows bands of separation within the cluster. This can further be clustered down, most likely indicating how frequency affects the placement; high frequencies being further.
