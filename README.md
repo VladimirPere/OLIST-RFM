@@ -2,13 +2,13 @@ RFM Customer Segmentation of 93,000 Olist customers using KMeans clustering, ide
 
 Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?select=olist_orders_dataset.csv
 
-  ##Purpose
+  ## Purpose
 - Create an unsupervised model correlating the Recency, Frequency, and Monetary value of customer transactions on OLIST, a Brazilian E-Commerce website.
 - Using the Model, segment customers into distinct behavioral groups for improved targeted marketing strategies
 
   Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib
 
-  ##Procedure
+  ## Procedure
 - Convert data to a complete RFM table with each customer unique ID
 - Drop unneeded columns, remove outliers for KMeans, and log transform any necessary columns
 - KMeans chosen as clustering algorithm, well-suited for relatively defined, spherical shapes shown in PCA projection.
@@ -17,7 +17,7 @@ Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/dataset
 - Use PCA variance ratio to determine how the RFM is graphed in the x and y axes
 - Interpret data and label clusters accordingly.
 
-  ##Results
+  ## Results
 <p align="center">
   <img src="images/kmeans_clusters_calibration.png" width="500" alt="WCSS and Silhouette score of KMeans model">
 </p>
@@ -49,21 +49,21 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
 - Cluster 3 shows by far the fewest people but also the most frequent users. With an average recency between cluster 0 and cluster 2, these people are labeled "Loyal Spenders"
 - Cluster 3 also shows bands of separation within the cluster. This can further be clustered down, most likely indicating how frequency affects the placement; high frequencies being further.
   
-  ##Applications of Findings
+  ## Applications of Findings
 ###Cluster 0 (Recent High Spenders) ->
 - A Retention campaign on premium products.
 - People in this group have budget to spend on quality goods.
   
-###Cluster 1 (Budget Cautious Spenders) ->
+### Cluster 1 (Budget Cautious Spenders) ->
 - More frequent emails.
 - Deals may be important as these people could have a budget.
 - Many people, so even a small conversion rate would help.
   
-###Cluster 2 (Lost Customers) ->
+### Cluster 2 (Lost Customers) ->
 - Either cut off or win back with new deals or recommended goods.
 - Customers over the average 550 days, should be cut off. Attempting a win back campaign below 550 days would be risky but could have great results due to how many there are.
 
-###Cluster 3 (Loyal Spenders) -> 
+### Cluster 3 (Loyal Spenders) -> 
 - Very important.
 - Keep using loyalty points, early access to products, and personalized recommendations.
 - Even though this is the smallest group, protecting them should be a high priority.
