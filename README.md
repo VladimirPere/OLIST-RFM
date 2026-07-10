@@ -50,7 +50,7 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
 - Cluster 3 also shows bands of separation within the cluster. This can further be clustered down, most likely indicating how frequency affects the placement; high frequencies being further.
   
 ## Applications of Findings
-###Cluster 0 (Recent High Spenders) ->
+### Cluster 0 (Recent High Spenders) ->
 - A Retention campaign on premium products.
 - People in this group have budget to spend on quality goods.
   
