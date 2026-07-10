@@ -48,4 +48,5 @@ axes[1].set_xticks(range(2, 11))
 axes[1].grid(True)
 
 plt.tight_layout()
+plt.savefig('/home/vladimir/Coding/Projects/OLIST-RFM/images/kmeans_clusters_calibration.png', bbox_inches='tight', dpi=300)
 plt.show()

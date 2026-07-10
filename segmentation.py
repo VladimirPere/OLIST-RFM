@@ -29,9 +29,9 @@ plot_df['Cluster'] = rfm['Cluster'].values
 
 cluster_names = {
     0: "Recent High Spenders",
-    1: "Recent Low Spenders",
+    1: "Budget Cautious Spenders",
     2: "Lost Customers",
-    3: "Loyal High Spenders",
+    3: "Loyal Spenders",
 }
 
 rfm['Cluster_name'] = rfm['Cluster'].map(cluster_names)
@@ -40,6 +40,7 @@ plot_df['Cluster_name'] = rfm['Cluster_name'].values
 
 sns.scatterplot(data=plot_df, x='PC1', y='PC2', hue='Cluster_name', palette='tab10')
 plt.title('K-Means Clusters (PCA Projection)')
+plt.savefig('/home/vladimir/Coding/Projects/OLIST-RFM/images/kmeans_clusters_pca_projection.png', bbox_inches='tight', dpi=300)
 plt.show()
 
 print(pca.explained_variance_ratio_)
