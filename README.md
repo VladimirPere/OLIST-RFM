@@ -34,7 +34,7 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
       1         272.53        1.0     65.63  33859 Budget Cautious Spenders
       2         550.08        1.0    119.11  26440           Lost Customers
       3         343.58        2.1    274.82   2733           Loyal Spenders   
-<img src="images/kmeans_clusters_pca_projection.png" width="350" alt="PCA projection of KMeans clustering">
+<img src="images/kmeans_clusters_pca_projection.png" width="200" alt="PCA projection of KMeans clustering">
 
 - Cluster 0 shows a group of recent spenders that have a high monetary budget. labeling these people as "Recent High Spenders"
 - Cluster 1 shows a group that spends much less than their cluster 0 counterparts. labeling these as "Budget Cautious Spenders"
