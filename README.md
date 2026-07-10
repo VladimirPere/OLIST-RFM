@@ -2,13 +2,13 @@ RFM Customer Segmentation of 93,000 Olist customers using KMeans clustering, ide
 
 Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?select=olist_orders_dataset.csv
 
-  ## Purpose
+## Purpose
 - Create an unsupervised model correlating the Recency, Frequency, and Monetary value of customer transactions on OLIST, a Brazilian E-Commerce website.
 - Using the Model, segment customers into distinct behavioral groups for improved targeted marketing strategies
 
   Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib
 
-  ## Procedure
+## Procedure
 - Convert data to a complete RFM table with each customer unique ID
 - Drop unneeded columns, remove outliers for KMeans, and log transform any necessary columns
 - KMeans chosen as clustering algorithm, well-suited for relatively defined, spherical shapes shown in PCA projection.
@@ -17,7 +17,7 @@ Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/dataset
 - Use PCA variance ratio to determine how the RFM is graphed in the x and y axes
 - Interpret data and label clusters accordingly.
 
-  ## Results
+## Results
 <p align="center">
   <img src="images/kmeans_clusters_calibration.png" width="500" alt="WCSS and Silhouette score of KMeans model">
 </p>
@@ -49,7 +49,7 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
 - Cluster 3 shows by far the fewest people but also the most frequent users. With an average recency between cluster 0 and cluster 2, these people are labeled "Loyal Spenders"
 - Cluster 3 also shows bands of separation within the cluster. This can further be clustered down, most likely indicating how frequency affects the placement; high frequencies being further.
   
-  ## Applications of Findings
+## Applications of Findings
 ###Cluster 0 (Recent High Spenders) ->
 - A Retention campaign on premium products.
 - People in this group have budget to spend on quality goods.
