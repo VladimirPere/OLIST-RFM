@@ -19,28 +19,28 @@ Data Provided by OLIST kaggle dataset found here: https://www.kaggle.com/dataset
 
   Results
 <p align="center">
-  <img src="images/kmeans_clusters_calibration.png" width="300" alt="WCSS and Silhouette score of KMeans model">
+  <img src="images/kmeans_clusters_calibration.png" width="500" alt="WCSS and Silhouette score of KMeans model">
 </p>
   
 A peak of .37 was found at 4 clusters. This is further emphasized by the bend in the WCSS graph being shown at around 4 clusters.
 
-         Recency  Frequency  Monetary_log
-    PC1   -0.137      0.702         0.699
-    PC2    0.990      0.073         0.121
+                                         Recency  Frequency  Monetary_log
+                                    PC1   -0.137      0.702         0.699
+                                    PC2    0.990      0.073         0.121
 
 
 - It can be seen that the graph favors frequency and monetary for PC1 (x-axis), whereas recency is favored in PC2 (y-axis).
 - Indicates that in the graph, data points further right spend more and buy more frequently. Whereas further up shows people who have more recently bought.
 
-                Recency  Frequency  Monetary  Count                 Segment
-      Cluster                                                           
-      0         292.81        1.0    262.09  29390     Recent High Spenders
-      1         272.53        1.0     65.63  33859 Budget Cautious Spenders
-      2         550.08        1.0    119.11  26440           Lost Customers
-      3         343.58        2.1    274.82   2733           Loyal Spenders
+                                              Recency  Frequency  Monetary  Count                 Segment
+                                    Cluster                                                           
+                                    0         292.81        1.0    262.09  29390     Recent High Spenders
+                                    1         272.53        1.0     65.63  33859 Budget Cautious Spenders
+                                    2         550.08        1.0    119.11  26440           Lost Customers
+                                    3         343.58        2.1    274.82   2733           Loyal Spenders
 
 <p align="center">
-  <img src="images/kmeans_clusters_pca_projection.png" width="200" alt="PCA projection of KMeans clustering">
+  <img src="images/kmeans_clusters_pca_projection.png" width="500" alt="PCA projection of KMeans clustering">
 </p>
 
 - Cluster 0 shows a group of recent spenders that have a high monetary budget. labeling these people as "Recent High Spenders"
