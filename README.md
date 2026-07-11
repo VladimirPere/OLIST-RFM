@@ -33,7 +33,7 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
 
 
 - It can be seen that the graph favors frequency and monetary for PC1 (x-axis), whereas recency is favored in PC2 (y-axis).
-- Indicates that in the graph, data points further right spend more and buy more frequently. Whereas further up shows people who have more recently bought.
+- Indicates that in the graph, data points further right spend more and buy more frequently. Whereas further up shows people who have bought less recently.
 
                                         Recency  Frequency  Monetary  Count                 Segment
                               Cluster                                                           
