@@ -16,7 +16,7 @@ pandas, numpy, scikit-learn, seaborn, matplotlib
 - Drop unneeded columns, remove outliers for KMeans, and log transform any necessary columns
 - KMeans chosen as clustering algorithm, well-suited for relatively defined, spherical shapes shown in PCA projection.
 - Calibrate model using the Elbow method and Silhouette score. Choosing the max Silhouette score and when the bend in Elbow method appears.
-- Run model on data and project data onto a 2d graph. Cluster using Kmeans.
+- Run model on data and project data onto a 2d graph.
 - Use PCA variance ratio to determine how the RFM is graphed in the x and y axes
 - Interpret data and label clusters accordingly.
 
