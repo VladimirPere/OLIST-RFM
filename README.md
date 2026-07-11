@@ -64,7 +64,7 @@ A peak of .37 was found at 4 clusters. This is further emphasized by the bend in
   
 ### Cluster 2 (Lost Customers) ->
 - Either cut off or win back with new deals or recommended goods.
-- Customers over the average 550 days, should be cut off. Attempting a win back campaign below 550 days would be risky but could have great results due to how many there are.
+- Customers over the average, 550 days, should be cut off. Attempting a win back campaign below 550 days would be risky but could have great results due to how many there are.
 
 ### Cluster 3 (Loyal Spenders) -> 
 - Very important.
